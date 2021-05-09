@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" contents="This is the personal website of Cody Clark">
+        <link href="styles.css" rel="stylesheet">
+        <title>Cody Clark | Projects</title>
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script defer src="scripts.js"></script>
+    </head>
+
+    <body onload="startProjects(); createLinks(); createFooter();">
+        <header class="projects-header">
+            <div id="nav"></div>
+        </header>
+        <section class="githubProjects">
+            <article>
+                <div id="antymology"></div>
+            </article>
+            <img src="https://user-images.githubusercontent.com/23039052/112792181-33f54f80-9020-11eb-8be4-9b1f77475be2.gif" alt="antymology" width="100%">
+            <article>
+                <div id="totc"></div>
+            </article>
+            <img src="https://user-images.githubusercontent.com/23039052/114950993-6d480080-9e11-11eb-83b3-6cf84a9e1d05.png" alt="totc" width="100%">
+            <article>
+                <div id="quidditch"></div>
+            </article>
+            <img src="https://user-images.githubusercontent.com/23039052/109377458-c91df080-7888-11eb-8f0d-c9e1f5b99f66.gif" alt="quidditch" width="100%">
+        </section>
+        <footer class="index-footer footer" id="footer"></footer>
+    </body>
+</html>
