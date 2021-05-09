@@ -37,6 +37,7 @@ function createLinks() {
 
 // Code for the Projects page
 function startProjects() {
+    // Defines the format for a github project
     class GithubProject extends React.Component {
         constructor(props) {
             super(props);
@@ -44,8 +45,16 @@ function startProjects() {
 
         render() {
             return (
-                React.createElement("a", {href : this.props.github}, 
-                    React.createElement("h2", { }, this.props.githubProjectTitle))
+                React.createElement("div", {}, 
+                    React.createElement("a", {href : this.props.github}, 
+                        React.createElement("h2", { }, this.props.githubProjectTitle)
+                    ),
+                    React.createElement("img", {
+                        src : this.props.imgsrc,
+                        alt : this.props.alt,
+                        width : this.props.width
+                    }, )
+                )
             )
         }
     }
@@ -55,7 +64,10 @@ function startProjects() {
             React.createElement(
                 GithubProject, {
                     github : "https://github.com/CT-Clark/Antymology",
-                    githubProjectTitle : "Antymology"
+                    githubProjectTitle : "Antymology",
+                    imgsrc : "https://user-images.githubusercontent.com/23039052/112792181-33f54f80-9020-11eb-8be4-9b1f77475be2.gif",
+                    alt : "Antymology",
+                    width : "50%"
                 }
             )
         );
@@ -65,7 +77,10 @@ function startProjects() {
             React.createElement(
                 GithubProject, {
                     github : "https://github.com/CT-Clark/Tragedy-of-the-Commons",
-                    githubProjectTitle : "Tragedy of the Commons"
+                    githubProjectTitle : "Tragedy of the Commons",
+                    imgsrc : "https://user-images.githubusercontent.com/23039052/114950993-6d480080-9e11-11eb-83b3-6cf84a9e1d05.png",
+                    alt : "totc",
+                    width : "50%"
                 }
             )
         );
@@ -75,7 +90,10 @@ function startProjects() {
             React.createElement(
                 GithubProject, {
                     github : "https://github.com/CT-Clark/Quidditch",
-                    githubProjectTitle : "Quidditch"
+                    githubProjectTitle : "Quidditch",
+                    imgsrc : "https://user-images.githubusercontent.com/23039052/109377458-c91df080-7888-11eb-8f0d-c9e1f5b99f66.gif",
+                    alt : "quidditch",
+                    width : "50%"
                 }
             )
         );
