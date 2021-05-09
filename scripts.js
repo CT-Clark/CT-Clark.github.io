@@ -98,6 +98,20 @@ function startProjects() {
             )
         );
 
+    const wasps = 
+        React.createElement("div", { }, 
+            React.createElement(
+                GithubProject, {
+                    github : "https://github.com/CT-Clark/Wasp-Stigmurgy",
+                    githubProjectTitle : "Wasps",
+                    imgsrc : "https://user-images.githubusercontent.com/23039052/115159569-0dd83380-a051-11eb-9269-6044cba62808.gif",
+                    alt : "wasps",
+                    width : "50%"
+                }
+            )
+        );
+                
+
     ReactDOM.render(antymology,
         document.getElementById("antymology")
     );
@@ -108,6 +122,10 @@ function startProjects() {
 
     ReactDOM.render(quidditch,
         document.getElementById("quidditch")
+    );
+
+    ReactDOM.render(wasps,
+        document.getElementById("antymology")
     );
 }
 
