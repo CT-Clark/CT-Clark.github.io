@@ -125,7 +125,7 @@ function startProjects() {
     );
 
     ReactDOM.render(wasps,
-        document.getElementById("antymology")
+        document.getElementById("wasps")
     );
 }
 
