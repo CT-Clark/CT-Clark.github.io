@@ -60,6 +60,7 @@ html, body {
     color: white;
     font-size: 2.5em;
     padding: 0;
+    margin: 10px;
 }
 
 .index-image {
@@ -69,6 +70,30 @@ html, body {
     width: 1000px;
     height: 100%;
     padding: 0 1.5em;
+}
+
+.soar-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 952px;
+    margin: 0;
+    padding: 0;
+}
+
+.music-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 952px;
+}
+
+.bike-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 952px;
+    height: 100%;
 }
 
 .about-header {
@@ -103,13 +128,15 @@ html, body {
 
 /*Bottom footer css*/
 .footer {
+    display: block;
     text-align: center;
-    background-color: #888;
+    background-color: rgba(170, 20, 20, 1);
     color: white;
-    padding: .25em 0;
     position: sticky;
     bottom: 0;
-    width: 100%;
+    width: 952px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer h3 {
